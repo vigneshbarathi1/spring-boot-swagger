@@ -22,7 +22,8 @@ public class SwaggerConfig {
 
     @Bean
     public Docket api() {
-        return new Docket(DocumentationType.SWAGGER_2).select()
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
                 .apis(RequestHandlerSelectors.basePackage("com.interviewDOT.HotelApiProvider.hotels"))
                 .paths(PathSelectors.any())
                 .build()
@@ -37,8 +38,7 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
-        ApiInfo apiInfo = new ApiInfo("Hotels Information Provider", "APIs to provide hotel details", "1.0", "Terms of service", new Contact("InterviewDOT", "www.interviewdot.in", "info@interviewdot.in"), "License of API", "API license URL", Collections.emptyList());
-        return apiInfo;
+        return new ApiInfo("Hotels Information Provider", "APIs to provide hotel details", "1.0", "Terms of service", new Contact("InterviewDOT", "www.interviewdot.in", "info@interviewdot.in"), "License of API", "API license URL", Collections.emptyList());
     }
 }
 
