@@ -1,0 +1,5 @@
+com\interviewDOT\HotelApiProvider\HotelsInfoProvider.class
+com\interviewDOT\HotelApiProvider\hotels\HotelController.class
+com\interviewDOT\HotelApiProvider\hotels\HotelService.class
+com\interviewDOT\HotelApiProvider\SwaggerConfig.class
+com\interviewDOT\HotelApiProvider\hotels\Hotel.class
